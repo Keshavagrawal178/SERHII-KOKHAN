@@ -3,37 +3,30 @@
 import Section from "./Section";
 import Reveal from "./Reveal";
 import Project from "./Project";
-
-const projects = [
-  {
-    number: "01",
-    title: "Project One",
-    description: "Interactive web experience",
-  },
-  {
-    number: "02",
-    title: "Project Two",
-    description: "Digital product and interface",
-  },
-  {
-    number: "03",
-    title: "Project Three",
-    description: "Frontend development",
-  },
-];
+import { projects } from "@/data/projects";
 
 export default function Projects() {
   return (
-    <Section>
+    <Section id="work">
       <Reveal>
         <div className="mb-20 flex items-end justify-between">
-          <h2 className="section-title">Selected Work</h2>
+          <div>
+            <p className="meta mb-6">01 / Selected Work</p>
 
-          <span className="meta hidden md:block">03 Projects</span>
+            <h2 className="section-title">
+              SELECTED
+              <br />
+              WORK.
+            </h2>
+          </div>
+
+          <span className="meta hidden md:block">
+            {projects.length.toString().padStart(2, "0")} Projects
+          </span>
         </div>
       </Reveal>
 
-      <div className="space-y-24">
+      <div className="space-y-28 md:space-y-40">
         {projects.map((project, index) => (
           <Reveal key={project.number} delay={index * 0.05}>
             <Project {...project} />

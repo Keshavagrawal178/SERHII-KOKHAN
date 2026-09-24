@@ -5,10 +5,12 @@ import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Cursor from "@/components/Cursor";
+import Loader from "@/components/Loader";
 
 export default function Home() {
   return (
     <main>
+      <Loader />
       <Cursor />
 
       <Navbar />

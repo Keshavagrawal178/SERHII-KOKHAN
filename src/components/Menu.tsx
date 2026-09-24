@@ -27,12 +27,13 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 z-[90] flex flex-col bg-[#050505] px-6 py-6 md:px-10 md:py-8"
+          className="fixed inset-0 z-[110] flex flex-col bg-[#050505] px-6 py-6 md:px-10 md:py-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.35 }}
         >
+          {/* Header */}
           <div className="flex items-center justify-between">
             <span className="text-sm font-medium tracking-tight">
               SERHII KOKHAN
@@ -40,6 +41,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
 
             <button
               type="button"
+              data-cursor="CLOSE"
               onClick={onClose}
               className="meta transition-opacity hover:opacity-60"
             >
@@ -47,11 +49,13 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             </button>
           </div>
 
+          {/* Navigation */}
           <nav className="flex flex-1 flex-col justify-center">
             {links.map((link, index) => (
               <motion.a
                 key={link.label}
                 href={link.href}
+                data-cursor="GO"
                 onClick={onClose}
                 className="w-fit text-[clamp(3.5rem,10vw,9rem)] font-medium leading-[0.85] tracking-[-0.06em] transition-opacity hover:opacity-50"
                 initial={{ opacity: 0, y: 40 }}
@@ -67,6 +71,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
             ))}
           </nav>
 
+          {/* Footer */}
           <div className="flex items-end justify-between">
             <span className="meta">Frontend Developer</span>
 
