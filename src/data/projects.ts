@@ -8,9 +8,9 @@ export type ProjectData = {
 export const projects: ProjectData[] = [
   {
     number: "01",
-    title: "Project One",
-    description: "Interactive web experience",
-    year: "2025",
+    title: "3D Clothing Configurator",
+    description: "Interactive 3D product experience",
+    year: "2026",
   },
   {
     number: "02",
