@@ -6,7 +6,7 @@ export default function Intro() {
     <Section className="flex min-h-screen items-center">
       <Reveal>
         <div className="max-w-6xl">
-          <p className="meta mb-8">01 / About the work</p>
+          <p className="meta mb-8">01 / INTRO</p>
 
           <h2 className="section-title">
             I BUILD DIGITAL

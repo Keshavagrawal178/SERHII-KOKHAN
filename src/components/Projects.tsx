@@ -11,9 +11,9 @@ export default function Projects() {
       <Reveal>
         <div className="mb-20 flex items-end justify-between">
           <div>
-            <p className="meta mb-6">01 / Selected Work</p>
+            <p className="meta mb-6">02 / Selected Work</p>
 
-            <h2 className="section-title">
+            <h2 className="section-titile">
               SELECTED
               <br />
               WORK.
@@ -21,7 +21,7 @@ export default function Projects() {
           </div>
 
           <span className="meta hidden md:block">
-            {projects.length.toString().padStart(2, "0")} Projects
+            {projects.length.toString().padStart(2, "0")} Project
           </span>
         </div>
       </Reveal>

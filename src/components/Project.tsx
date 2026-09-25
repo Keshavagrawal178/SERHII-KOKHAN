@@ -7,14 +7,14 @@ type ProjectProps = {
   number: string;
   title: string;
   description: string;
-  year: string;
+  // year: string;
 };
 
 export default function Project({
   number,
   title,
   description,
-  year,
+  // year,
 }: ProjectProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -58,7 +58,7 @@ export default function Project({
           <span className="meta">{description}</span>
         </div>
 
-        <span className="meta">{year}</span>
+        {/* <span className="meta">{year}</span> */}
       </div>
 
       {/* Project visual */}

@@ -7,7 +7,7 @@ export default function About() {
       <Reveal>
         <div className="grid gap-16 md:grid-cols-2">
           <div>
-            <p className="meta mb-8">02 / About</p>
+            <p className="meta mb-8">03 / About</p>
 
             <h2 className="section-title">
               FRONTEND
@@ -19,7 +19,8 @@ export default function About() {
           <div className="max-w-lg self-end">
             <p className="body-text">
               I build interactive web experiences with a focus on thoughtful
-              interfaces, modern frontend technologies, and 3D on the web.
+              interfaces, modern frontend technologies, and engaging digital
+              experiences.
             </p>
 
             <div className="mt-16 grid grid-cols-2 gap-y-8">
@@ -34,8 +35,8 @@ export default function About() {
               </div>
 
               <div>
-                <p className="meta mb-3">Experience</p>
-                <p className="text-sm">9+ Years</p>
+                <p className="meta mb-3">Specialty</p>
+                <p className="text-sm">Interactive Experiences</p>
               </div>
 
               <div>
